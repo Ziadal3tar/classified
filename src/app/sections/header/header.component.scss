@@ -1,16 +1,15 @@
 header {
   position: relative;
   width: 100vw;
-  height: 70vh;
+  height: auto;
   overflow: hidden;
   z-index: 0;
+  padding-bottom: 50px;
+margin-top: 102px;
   // background-image: url(./assets/surface-X1GZqv-F7Tw-unsplash.jpg);
   background-position: center 20%;
   background-size: cover;
-  @media (max-width : 768px) {
-    height: auto;
-    padding-bottom: 50px;
-  }
+
 
   &::before {
 
@@ -36,7 +35,10 @@ header {
         font-weight: 700;
 @media (max-width : 768px) {
 white-space: nowrap;
-font-size: 50px;
+font-size: 40px;
+span {
+  font-size: 50px !important;
+}
 }
         span {
           font-size: 70px;
