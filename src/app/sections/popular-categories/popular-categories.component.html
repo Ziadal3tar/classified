@@ -1,0 +1,23 @@
+<section class="col-12 row m-0 p-0 center-center categories py-5">
+  <div class="col-8 d-flex justify-content-between align-items-center py-5">
+    <h1 class="fw-bold">
+      الفئات الشائعة
+    </h1>
+    <div class="col-4 col-lg-3 col-xl-2 p-0 d-none d-md-block">
+      <app-main-button text="جميع الفئات"></app-main-button>
+    </div>
+  </div>
+  <div class="col-8 categories-box row">
+    <div class="col-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center align-items-center my-3" *ngFor="let item of [0,1,2,3,4,5,0,1,2,3,4,5]">
+      <div class="box d-flex flex-column justify-content-center align-items-center">
+        <i class="bi bi-camera"></i>
+        <p>DSLR Camera</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-8 center-center pt-5">
+    <div class="col-6 p-0  d-md-none">
+      <app-main-button text="جميع الفئات"></app-main-button>
+    </div>
+  </div>
+</section>

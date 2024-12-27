@@ -1,0 +1,128 @@
+nav.nav {
+  box-shadow: #64646f33 0px 7px 29px 0px;
+
+
+  ul {
+    margin: 0;
+    z-index: 1 !important;
+
+    li {
+
+      list-style: none;
+
+      margin: 0 25px;
+      font-size: 25px;
+      cursor: pointer;
+      position: relative;
+      transition: 0.5s;
+
+
+      a {
+        text-decoration: none;
+
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          height: 2px;
+          width: 0%;
+          background-color: #93032e;
+          transition: 0.5s;
+
+        }
+
+        &:hover {
+          color: #93032e;
+
+          &::after {
+            width: 100%;
+            left: 0;
+
+          }
+        }
+      }
+
+      &:hover {
+        .dropdown {
+
+          border-top: #93032e solid 1px;
+          max-height: 300px;
+        }
+      }
+
+      .dropdown {
+        width: 200px;
+
+        position: absolute;
+        background-color: #ffffff;
+        top: 70px;
+        box-shadow: #64646f33 0px 7px 29px 0px;
+        overflow: hidden;
+        max-height: 0px;
+        transition: 0.5s;
+
+        ul {
+          padding: 0;
+
+          li {
+            font-size: 22px;
+            margin: 0;
+            padding: 5px 10px 0px;
+
+            &:hover {
+              background-color: #93032e55;
+            }
+          }
+        }
+      }
+    }
+
+
+  }
+}
+.openNav{
+  width: 80vw !important;
+}
+.sideNav {
+  background-color: #ffffff;
+  height: auto;
+width: 0vw;
+overflow: hidden;
+box-shadow: #64646f33 0px 7px 29px 0px;
+transition: 0.5s;
+position: absolute;
+top: 102px;
+right: 0;
+z-index: 1;
+  ul {
+    padding-right: 20px;
+    list-style: none;
+
+    li {
+      font-size: 30px;
+      padding: 10px 0;
+      white-space: nowrap;
+      .dropdown {
+        padding-right: 20px;
+        overflow: hidden;
+        height: 0px;
+        transition: 0.5s;
+
+        ul {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          height: 100%;
+        }
+      }
+
+      &:hover {
+        .dropdown {
+          height: 450px;
+          max-height: 450px !important;
+        }
+      }
+    }
+  }
+}

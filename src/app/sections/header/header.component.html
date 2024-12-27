@@ -1,0 +1,61 @@
+<header>
+  <div class="w-100 box row m-0 d-flex">
+    <div class="col-12 center-center">
+
+      <div class="col-8  half-r">
+        <h1>منورين <span class="logo">سوق <span class="">لك</span></span></h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, nobis?</p>
+        <div class="btns col-10 col-md-6 col-lg-2 center-between">
+          <button class="btn btn-2 bg-color-3 text-white">اضافة اعلان</button>
+          <button class="btn btn-1 bg-white color-3">تسوق</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12  mt-5 row m-0 center-center searchBox ">
+
+
+      <div class="col-8 row m-0 py-3 searchBar bg-color-3 bg-opacity-50 rounded-3">
+        <div class="btnBox col-12 col-md-6 col-lg-3 ">
+
+          <button class="btn btn-light color-3 fw-bold fs-6 w-100" [ngClass]="{'rounded-1': open!='location'}"
+            (click)="openOptions('location')"><i class="bi bi-geo-alt-fill"></i>حدد الموقع</button>
+          <div class="options overflow-hidden " [ngClass]="open=='location'?'open':'close'">
+            <p>القاهره</p>
+            <p>الاسكندريه</p>
+            <p>طنطا</p>
+            <p>المنصوره</p>
+          </div>
+        </div>
+        <div class="btnBox col-12 col-md-6 col-lg-3 ">
+
+          <button class="btn btn-light color-3 fw-bold fs-6 w-100" [ngClass]="{'rounded-1': open!='category'}"
+            (click)="openOptions('category')"><i class="bi bi-geo-alt-fill"></i>حدد الفئه</button>
+          <div class="options overflow-hidden " [ngClass]="open=='category'?'open':'close'">
+            <p>عقارات</p>
+            <p>الكترونيات</p>
+            <p>سيارات</p>
+            <p>منزليه</p>
+          </div>
+        </div>
+        <div class="btnBox col-12 col-md-8 col-lg-4">
+          <input type="text" placeholder="البحث" class="w-100 p-0 m-0 h-100 border-0 pe-3 fs-5 rounded-1">
+        </div>
+        <div class="btnBox col-12 col-md-4 col-lg-2">
+          <app-main-button class="w-100" text="بحث"></app-main-button>
+
+        </div>
+        <div class="col-12 px-4 pt-4">
+          <p class=" fs-5 text-white">
+            الكلمات الاكثر بحثا:
+
+            <span class="px-3 cursorPointer">لوريم </span>
+            <span class="px-3 cursorPointer">لوريم </span>
+            <span class="px-3 cursorPointer">لوريم </span>
+            <span class="px-3 cursorPointer">لوريم </span>
+            <span class="px-3 cursorPointer">لوريم </span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

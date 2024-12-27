@@ -1,1 +1,91 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'bootstrap/scss/bootstrap';
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Harmattan:wght@400;500;600;700&display=swap');
+*,.row {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Harmattan", serif;
+
+}
+body{
+  width: 100vw;
+  height: auto;
+  overflow-x:hidden ;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+li {
+margin: 0;
+color: #14213d;
+
+}
+p{
+  margin: 0;
+}
+body {
+  font-family: "Merienda", cursive;
+}
+
+input {
+  outline: 0;
+}
+
+.transition {
+  transition: 0.5s;
+}
+
+.pointer {
+  cursor: pointer;
+}
+.center-between{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.center-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.center-end{
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+.center-start{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.color-1{color: #14213d;}
+.bg-color-1{background-color: #14213d;}
+//14213d
+.color-2{color: #fefae0;}
+.bg-color-2{background-color: #fefae0;}
+
+.color-3{color: #93032e;}
+.bg-color-3{background-color: #93032e;}
+// bc6c25
+.img{
+
+}
+.logo {
+  font-family: "Alkalami", serif;
+  font-size: 44px;
+  font-weight: 900;
+color: #93032e;
+span{
+  color: #14213d;
+}
+  span {}
+}
+.cursorPointer{
+  cursor: pointer;
+}

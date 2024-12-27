@@ -1,0 +1,76 @@
+<nav class="nav center-between row p-3 ">
+
+
+  <div class="logo col-10 col-lg-2 col-xl-4 color-3 text-end"> سوق <span class="color-1">لك</span></div>
+  <i class="bi col-2 fs-1 d-block d-lg-none" (click)="openNav = !openNav" [ngClass]="!openNav?'bi-list':'bi-x-lg'"></i>
+
+  <ul class="center-start col-10 col-xl-8 d-none d-lg-flex">
+    <li><a>الرئيسية</a></li>
+    <li><a>فئات</a></li>
+    <li><a>صفحات<i class="bi bi-caret-down-fill fs-6"></i></a>
+      <div class="dropdown">
+        <ul>
+          <li>عنا</li>
+          <li>تفاصيل المنتج</li>
+          <li>404</li>
+          <li>الاسعار</li>
+          <li>تسجيل الدخول</li>
+          <li>انشاء حساب</li>
+        </ul>
+      </div>
+    </li>
+    <li><a>مدونات</a></li>
+    <li><a>تواصل</a></li>
+    <li><a>حسابي<i class="bi bi-caret-down-fill fs-6"></i></a>
+      <div class="dropdown">
+        <ul>
+          <li>لوحة المعلومات</li>
+          <li>تفاصيل المنتج</li>
+          <li>اعدادات</li>
+          <li>اعلاناتي</li>
+          <li>الرسائل/العروض</li>
+          <li>الدفع</li>
+          <li>تسجيل الخروج</li>
+        </ul>
+      </div>
+    </li>
+    <app-main-button text="اضافه"></app-main-button>
+
+  </ul>
+</nav>
+<nav class="sideNav d-block d-lg-none" [ngClass]="{'openNav': openNav}">
+  <ul class="">
+    <li><a>الرئيسية</a></li>
+    <li><a>فئات</a></li>
+    <li><a>صفحات<i class="bi bi-caret-down-fill fs-6"></i></a>
+      <div class="dropdown">
+        <ul>
+          <li>عنا</li>
+          <li>تفاصيل المنتج</li>
+          <li>404</li>
+          <li>الاسعار</li>
+          <li>تسجيل الدخول</li>
+          <li>انشاء حساب</li>
+        </ul>
+      </div>
+    </li>
+    <li><a>مدونات</a></li>
+    <li><a>تواصل</a></li>
+    <li><a>حسابي<i class="bi bi-caret-down-fill fs-6"></i></a>
+      <div class="dropdown">
+        <ul>
+          <li>لوحة المعلومات</li>
+          <li>تفاصيل المنتج</li>
+          <li>اعدادات</li>
+          <li>اعلاناتي</li>
+          <li>الرسائل/العروض</li>
+          <li>الدفع</li>
+          <li>تسجيل الخروج</li>
+        </ul>
+      </div>
+    </li>
+    <app-main-button text="اضافه"></app-main-button>
+
+
+  </ul>
+</nav>
