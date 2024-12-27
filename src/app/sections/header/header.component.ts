@@ -9,6 +9,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
+  header:any="./assets/surface-X1GZqv-F7Tw-unsplash.jpg"
   open: any='';
   openOptions(type: any) {
     if (this.open == type) {
