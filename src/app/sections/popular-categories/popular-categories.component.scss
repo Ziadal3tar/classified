@@ -1,10 +1,13 @@
-
-
 .categories {
   // width: 100%; // تأكد من أن العرض لا يتجاوز الصفحة
   width: 100vw;
   overflow: hidden;
+  @media (max-width : 500px) {
 
+h1{
+font-size: 35px;
+}
+  }
   .categories-box {
 
     // width: 100%; // ضبط عرض الصندوق
@@ -12,16 +15,17 @@
       width: 150px; // منع التجاوز الأفقي
       height: 150px;
       box-sizing: border-box; // حساب الحدود والهوامش ضمن الحجم
-border-radius: 7px;
-@media (max-width : 500px) {
-  i {
-    font-size: 60px !important;
-  }
+      border-radius: 7px;
 
-  p {
-    font-size: 16px !important;
-  }
-}
+      @media (max-width : 500px) {
+        i {
+          font-size: 60px !important;
+        }
+
+        p {
+          font-size: 16px !important;
+        }
+      }
 
       i {
         font-size: 80px;
@@ -37,10 +41,11 @@ border-radius: 7px;
       &:hover {
         background-color: #93032e;
         box-shadow: #64646f33 0px 7px 29px 0px;
-color: white;
+        color: white;
         cursor: pointer;
-        p{
-color: white;
+
+        p {
+          color: white;
 
         }
       }
